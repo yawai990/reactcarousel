@@ -1,0 +1,38 @@
+.carousel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+}
+.img{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    user-select: none;
+}
+.arrow.left-arrow{
+    left: 20px;
+}
+.arrow.right-arrow{
+    right: 20px;
+}
+
+.slide{
+    opacity: 0.5;
+    transition: 1s ease;
+    transform: translateX(50px);
+    /* transform: rotate3d(0, 1, 0.5,0.5rad); */
+}
+.slide.active{
+    opacity: 1;
+    /* transform:scale(1.08); */
+    transform: translateX(0px);
+    /* transform:rotate3d(1,1,1,0) */
+}
